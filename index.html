@@ -31,11 +31,11 @@
     --radius: 12px;
     --radius-lg: 20px;
   }
-
+ 
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
+ 
   html { scroll-behavior: smooth; }
-
+ 
   body {
     font-family: var(--sans);
     background: var(--cream);
@@ -43,7 +43,7 @@
     line-height: 1.6;
     overflow-x: hidden;
   }
-
+ 
   /* ── NAV ── */
   nav {
     position: fixed;
@@ -59,28 +59,28 @@
     -webkit-backdrop-filter: blur(12px);
     border-bottom: 0.5px solid var(--rule);
   }
-
+ 
   .nav-logo {
     display: flex;
     align-items: center;
     gap: 10px;
     text-decoration: none;
   }
-
+ 
   .nav-logo-name {
     font-family: var(--serif);
     font-size: 22px;
     color: var(--g700);
     line-height: 1;
   }
-
+ 
   .nav-links {
     display: flex;
     align-items: center;
     gap: 2rem;
     list-style: none;
   }
-
+ 
   .nav-links a {
     font-size: 14px;
     font-weight: 500;
@@ -88,9 +88,9 @@
     text-decoration: none;
     transition: color .2s;
   }
-
+ 
   .nav-links a:hover { color: var(--g700); }
-
+ 
   .nav-cta {
     background: var(--g700);
     color: white !important;
@@ -100,9 +100,9 @@
     font-size: 13px !important;
     transition: background .2s !important;
   }
-
+ 
   .nav-cta:hover { background: var(--g500) !important; color: white !important; }
-
+ 
   /* ── HERO ── */
   .hero {
     min-height: 100vh;
@@ -114,7 +114,7 @@
     max-width: 1200px;
     margin: 0 auto;
   }
-
+ 
   .hero-eyebrow {
     display: inline-flex;
     align-items: center;
@@ -130,7 +130,7 @@
     text-transform: uppercase;
     margin-bottom: 1.5rem;
   }
-
+ 
   .eyebrow-dot {
     width: 6px;
     height: 6px;
@@ -138,12 +138,12 @@
     background: var(--a300);
     animation: pulse 2s ease-in-out infinite;
   }
-
+ 
   @keyframes pulse {
     0%, 100% { opacity: 1; transform: scale(1); }
     50% { opacity: .6; transform: scale(.8); }
   }
-
+ 
   .hero-title {
     font-family: var(--serif);
     font-size: clamp(42px, 5vw, 62px);
@@ -152,12 +152,12 @@
     margin-bottom: 1.5rem;
     letter-spacing: -.02em;
   }
-
+ 
   .hero-title em {
     font-style: italic;
     color: var(--a400);
   }
-
+ 
   .hero-desc {
     font-size: 17px;
     color: var(--muted);
@@ -165,7 +165,7 @@
     margin-bottom: 2.5rem;
     max-width: 460px;
   }
-
+ 
   .hero-actions {
     display: flex;
     align-items: center;
@@ -173,7 +173,7 @@
     flex-wrap: wrap;
     margin-bottom: 3rem;
   }
-
+ 
   .btn-primary {
     display: inline-flex;
     align-items: center;
@@ -190,9 +190,9 @@
     text-decoration: none;
     transition: background .2s, transform .15s;
   }
-
+ 
   .btn-primary:hover { background: var(--g500); transform: translateY(-1px); }
-
+ 
   .btn-ghost {
     display: inline-flex;
     align-items: center;
@@ -209,19 +209,19 @@
     text-decoration: none;
     transition: background .2s, border-color .2s;
   }
-
+ 
   .btn-ghost:hover { background: var(--g050); border-color: var(--g500); }
-
+ 
   .hero-social-proof {
     display: flex;
     align-items: center;
     gap: 12px;
   }
-
+ 
   .avatars {
     display: flex;
   }
-
+ 
   .avatar {
     width: 32px;
     height: 32px;
@@ -235,17 +235,17 @@
     font-weight: 700;
     color: white;
   }
-
+ 
   .proof-text {
     font-size: 13px;
     color: var(--muted);
   }
-
+ 
   .proof-text strong {
     color: var(--ink);
     font-weight: 700;
   }
-
+ 
   /* ── HERO VISUAL ── */
   .hero-visual {
     position: relative;
@@ -253,7 +253,7 @@
     justify-content: center;
     align-items: center;
   }
-
+ 
   .phone-frame {
     width: 280px;
     background: var(--g900);
@@ -263,13 +263,13 @@
     position: relative;
     z-index: 2;
   }
-
+ 
   .phone-screen {
     background: #111;
     border-radius: 24px;
     overflow: hidden;
   }
-
+ 
   .phone-header {
     background: #1F1F1F;
     padding: 12px 16px;
@@ -278,7 +278,7 @@
     gap: 10px;
     border-bottom: 0.5px solid rgba(255,255,255,.06);
   }
-
+ 
   .phone-avatar {
     width: 34px;
     height: 34px;
@@ -292,11 +292,11 @@
     color: white;
     flex-shrink: 0;
   }
-
+ 
   .phone-contact { flex: 1; }
   .phone-contact-name { font-size: 13px; font-weight: 600; color: white; }
   .phone-contact-status { font-size: 11px; color: #74C69D; }
-
+ 
   .phone-messages {
     padding: 14px 12px;
     display: flex;
@@ -304,7 +304,7 @@
     gap: 8px;
     min-height: 300px;
   }
-
+ 
   .msg {
     max-width: 85%;
     padding: 8px 12px;
@@ -315,33 +315,33 @@
     transform: translateY(8px);
     animation: msgIn .4s ease forwards;
   }
-
+ 
   .msg-out {
     align-self: flex-end;
     background: #005C4B;
     color: white;
     border-bottom-right-radius: 4px;
   }
-
+ 
   .msg-in {
     align-self: flex-start;
     background: #2A2A2A;
     color: #E8E8E8;
     border-bottom-left-radius: 4px;
   }
-
+ 
   .msg-time { font-size: 10px; opacity: .6; margin-top: 3px; text-align: right; }
-
+ 
   .msg:nth-child(1) { animation-delay: .3s; }
   .msg:nth-child(2) { animation-delay: .9s; }
   .msg:nth-child(3) { animation-delay: 1.5s; }
   .msg:nth-child(4) { animation-delay: 2.1s; }
   .msg:nth-child(5) { animation-delay: 2.7s; }
-
+ 
   @keyframes msgIn {
     to { opacity: 1; transform: translateY(0); }
   }
-
+ 
   .msg-tag {
     display: inline-block;
     background: rgba(116,198,157,.2);
@@ -352,7 +352,7 @@
     border-radius: 4px;
     margin-bottom: 4px;
   }
-
+ 
   .floating-badge {
     position: absolute;
     background: white;
@@ -368,24 +368,24 @@
     animation: floatBadge 3s ease-in-out infinite;
     z-index: 3;
   }
-
+ 
   .floating-badge.top-right {
     top: 40px;
     right: -20px;
     animation-delay: .5s;
   }
-
+ 
   .floating-badge.bottom-left {
     bottom: 60px;
     left: -30px;
     animation-delay: 1.5s;
   }
-
+ 
   @keyframes floatBadge {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-6px); }
   }
-
+ 
   .badge-icon {
     width: 28px;
     height: 28px;
@@ -395,7 +395,7 @@
     justify-content: center;
     font-size: 14px;
   }
-
+ 
   /* ── TRUST BAR ── */
   .trust-bar {
     border-top: 0.5px solid var(--rule);
@@ -403,7 +403,7 @@
     background: white;
     padding: 1.25rem 4rem;
   }
-
+ 
   .trust-inner {
     max-width: 1200px;
     margin: 0 auto;
@@ -413,7 +413,7 @@
     justify-content: center;
     flex-wrap: wrap;
   }
-
+ 
   .trust-item {
     display: flex;
     align-items: center;
@@ -422,7 +422,7 @@
     font-weight: 600;
     color: var(--muted);
   }
-
+ 
   .trust-icon {
     width: 20px;
     height: 20px;
@@ -433,17 +433,17 @@
     justify-content: center;
     flex-shrink: 0;
   }
-
+ 
   /* ── SECTIONS SHARED ── */
   section {
     padding: 6rem 4rem;
   }
-
+ 
   .section-inner {
     max-width: 1200px;
     margin: 0 auto;
   }
-
+ 
   .section-label {
     font-size: 11px;
     font-weight: 700;
@@ -452,7 +452,7 @@
     color: var(--g400);
     margin-bottom: .75rem;
   }
-
+ 
   .section-title {
     font-family: var(--serif);
     font-size: clamp(32px, 4vw, 48px);
@@ -461,24 +461,24 @@
     margin-bottom: 1rem;
     letter-spacing: -.02em;
   }
-
+ 
   .section-desc {
     font-size: 16px;
     color: var(--muted);
     max-width: 560px;
     line-height: 1.7;
   }
-
+ 
   /* ── HOW IT WORKS ── */
   .how-it-works {
     background: var(--g900);
     color: white;
   }
-
+ 
   .how-it-works .section-title { color: var(--g050); }
   .how-it-works .section-label { color: var(--g300); }
   .how-it-works .section-desc { color: var(--g300); }
-
+ 
   .steps-grid {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -488,16 +488,16 @@
     border-radius: var(--radius-lg);
     overflow: hidden;
   }
-
+ 
   .step {
     background: var(--g900);
     padding: 2rem 1.75rem;
     position: relative;
     transition: background .2s;
   }
-
+ 
   .step:hover { background: rgba(255,255,255,.04); }
-
+ 
   .step-num {
     font-family: var(--serif);
     font-size: 48px;
@@ -506,7 +506,7 @@
     margin-bottom: 1rem;
     display: block;
   }
-
+ 
   .step-icon {
     width: 44px;
     height: 44px;
@@ -518,20 +518,20 @@
     justify-content: center;
     margin-bottom: 1rem;
   }
-
+ 
   .step-title {
     font-size: 16px;
     font-weight: 700;
     color: white;
     margin-bottom: .5rem;
   }
-
+ 
   .step-desc {
     font-size: 13px;
     color: rgba(255,255,255,.5);
     line-height: 1.6;
   }
-
+ 
   /* ── NICHOS ── */
   .nichos-grid {
     display: grid;
@@ -539,7 +539,7 @@
     gap: 1rem;
     margin-top: 3rem;
   }
-
+ 
   .nicho-card {
     background: white;
     border: 0.5px solid var(--rule);
@@ -548,13 +548,13 @@
     transition: border-color .2s, transform .2s, box-shadow .2s;
     cursor: default;
   }
-
+ 
   .nicho-card:hover {
     border-color: var(--g300);
     transform: translateY(-3px);
     box-shadow: 0 12px 32px rgba(27,67,50,.08);
   }
-
+ 
   .nicho-icon {
     width: 44px;
     height: 44px;
@@ -565,21 +565,21 @@
     font-size: 22px;
     margin-bottom: 1rem;
   }
-
+ 
   .nicho-title {
     font-size: 16px;
     font-weight: 700;
     color: var(--ink);
     margin-bottom: .4rem;
   }
-
+ 
   .nicho-pain {
     font-size: 13px;
     color: var(--muted);
     line-height: 1.5;
     margin-bottom: .75rem;
   }
-
+ 
   .nicho-use {
     font-size: 12px;
     font-weight: 600;
@@ -588,17 +588,17 @@
     align-items: center;
     gap: 5px;
   }
-
+ 
   /* ── PRICING ── */
   .pricing-bg { background: var(--g050); }
-
+ 
   .pricing-grid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 1rem;
     margin-top: 3rem;
   }
-
+ 
   .price-card {
     background: white;
     border: 0.5px solid var(--rule);
@@ -606,12 +606,12 @@
     padding: 2rem;
     position: relative;
   }
-
+ 
   .price-card.featured {
     border: 2px solid var(--g500);
     box-shadow: 0 8px 40px rgba(27,67,50,.12);
   }
-
+ 
   .featured-badge {
     position: absolute;
     top: -13px;
@@ -626,7 +626,7 @@
     white-space: nowrap;
     letter-spacing: .04em;
   }
-
+ 
   .price-name {
     font-size: 13px;
     font-weight: 700;
@@ -635,33 +635,33 @@
     letter-spacing: .08em;
     margin-bottom: .75rem;
   }
-
+ 
   .price-amount {
     display: flex;
     align-items: baseline;
     gap: 2px;
     margin-bottom: .25rem;
   }
-
+ 
   .price-currency {
     font-size: 16px;
     font-weight: 700;
     color: var(--g700);
     margin-top: 6px;
   }
-
+ 
   .price-number {
     font-family: var(--serif);
     font-size: 48px;
     color: var(--g700);
     line-height: 1;
   }
-
+ 
   .price-period {
     font-size: 13px;
     color: var(--subtle);
   }
-
+ 
   .price-setup {
     font-size: 12px;
     color: var(--subtle);
@@ -669,7 +669,7 @@
     padding-bottom: 1.5rem;
     border-bottom: 0.5px solid var(--rule);
   }
-
+ 
   .price-features {
     list-style: none;
     display: flex;
@@ -677,7 +677,7 @@
     gap: 10px;
     margin-bottom: 2rem;
   }
-
+ 
   .price-features li {
     display: flex;
     align-items: flex-start;
@@ -686,7 +686,7 @@
     color: var(--muted);
     line-height: 1.4;
   }
-
+ 
   .check {
     width: 16px;
     height: 16px;
@@ -698,9 +698,9 @@
     justify-content: center;
     margin-top: 1px;
   }
-
+ 
   .check svg { display: block; }
-
+ 
   .cross {
     width: 16px;
     height: 16px;
@@ -713,7 +713,7 @@
     margin-top: 1px;
     opacity: .4;
   }
-
+ 
   .price-cta {
     display: block;
     width: 100%;
@@ -728,23 +728,23 @@
     transition: all .2s;
     border: none;
   }
-
+ 
   .price-cta-primary {
     background: var(--g700);
     color: white;
   }
-
+ 
   .price-cta-primary:hover { background: var(--g500); }
-
+ 
   .price-cta-outline {
     background: transparent;
     color: var(--g700);
     border: 1.5px solid var(--rule) !important;
     border: none;
   }
-
+ 
   .price-cta-outline:hover { background: var(--g050); border-color: var(--g300); }
-
+ 
   /* ── TESTIMONIAL ── */
   .testimonial-grid {
     display: grid;
@@ -752,21 +752,21 @@
     gap: 1rem;
     margin-top: 3rem;
   }
-
+ 
   .testi-card {
     background: white;
     border: 0.5px solid var(--rule);
     border-radius: var(--radius-lg);
     padding: 1.75rem;
   }
-
+ 
   .testi-stars {
     color: var(--a300);
     font-size: 14px;
     margin-bottom: 1rem;
     letter-spacing: 2px;
   }
-
+ 
   .testi-quote {
     font-size: 14px;
     color: var(--ink);
@@ -774,13 +774,13 @@
     margin-bottom: 1.25rem;
     font-style: italic;
   }
-
+ 
   .testi-author {
     display: flex;
     align-items: center;
     gap: 10px;
   }
-
+ 
   .testi-avatar {
     width: 36px;
     height: 36px;
@@ -793,27 +793,27 @@
     color: white;
     flex-shrink: 0;
   }
-
+ 
   .testi-name { font-size: 13px; font-weight: 700; color: var(--ink); }
   .testi-biz { font-size: 12px; color: var(--subtle); }
-
+ 
   /* ── CTA FINAL ── */
   .cta-final {
     background: var(--g700);
     text-align: center;
   }
-
+ 
   .cta-final .section-title {
     color: white;
     margin-bottom: 1rem;
   }
-
+ 
   .cta-final .section-desc {
     color: var(--g300);
     max-width: 480px;
     margin: 0 auto 2.5rem;
   }
-
+ 
   .cta-final .btn-primary {
     background: var(--a300);
     color: var(--g900);
@@ -821,22 +821,22 @@
     padding: 16px 32px;
     margin: 0 auto;
   }
-
+ 
   .cta-final .btn-primary:hover { background: var(--a400); }
-
+ 
   .cta-note {
     font-size: 12px;
     color: rgba(116,198,157,.6);
     margin-top: 1rem;
   }
-
+ 
   /* ── FOOTER ── */
   footer {
     background: var(--g900);
     padding: 2.5rem 4rem;
     border-top: 0.5px solid rgba(255,255,255,.06);
   }
-
+ 
   .footer-inner {
     max-width: 1200px;
     margin: 0 auto;
@@ -846,19 +846,19 @@
     flex-wrap: wrap;
     gap: 1rem;
   }
-
+ 
   .footer-brand {
     display: flex;
     align-items: center;
     gap: 10px;
   }
-
+ 
   .footer-name {
     font-family: var(--serif);
     font-size: 18px;
     color: var(--g050);
   }
-
+ 
   .footer-by {
     font-size: 11px;
     color: var(--g300);
@@ -866,29 +866,33 @@
     letter-spacing: .08em;
     text-transform: uppercase;
   }
-
+ 
   .footer-copy {
     font-size: 12px;
     color: rgba(255,255,255,.3);
   }
-
+ 
   /* ── ANIMATIONS ── */
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(24px); }
     to   { opacity: 1; transform: translateY(0); }
   }
-
+ 
   .fade-up {
     opacity: 0;
     animation: fadeUp .6s ease forwards;
   }
-
+ 
   .delay-1 { animation-delay: .1s; }
   .delay-2 { animation-delay: .2s; }
   .delay-3 { animation-delay: .35s; }
   .delay-4 { animation-delay: .5s; }
-
+ 
   /* ── RESPONSIVE ── */
+  @media (max-width: 1100px) {
+    .pricing-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+ 
   @media (max-width: 900px) {
     .hero {
       grid-template-columns: 1fr;
@@ -902,22 +906,24 @@
     section { padding: 4rem 2rem; }
     .steps-grid { grid-template-columns: 1fr 1fr; }
     .nichos-grid { grid-template-columns: 1fr 1fr; }
-    .pricing-grid { grid-template-columns: 1fr; max-width: 400px; margin-left: auto; margin-right: auto; }
+    .pricing-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .testimonial-grid { grid-template-columns: 1fr; }
     nav { padding: 0 1.5rem; }
     .nav-links { display: none; }
     .trust-bar { padding: 1.25rem 2rem; }
     footer { padding: 2rem 2rem; }
   }
-
+ 
   @media (max-width: 600px) {
     .steps-grid { grid-template-columns: 1fr; }
     .nichos-grid { grid-template-columns: 1fr; }
+    .pricing-grid { grid-template-columns: 1fr; max-width: 400px; margin-left: auto; margin-right: auto; }
+    .price-card { padding: 1.5rem; }
   }
 </style>
 </head>
 <body>
-
+ 
 <!-- NAV -->
 <nav>
   <a href="#" class="nav-logo">
@@ -936,7 +942,7 @@
     <li><a href="#empezar" class="nav-cta">Empezar gratis</a></li>
   </ul>
 </nav>
-
+ 
 <!-- HERO -->
 <div class="hero">
   <div>
@@ -968,7 +974,7 @@
       <span class="proof-text">Somos un producto nuevo. <strong>Los primeros 3 clientes</strong> entran a precio de fundadores.</span>
     </div>
   </div>
-
+ 
   <div class="hero-visual fade-up delay-3">
     <div class="floating-badge top-right">
       <div class="badge-icon" style="background:#EAF3DE;">
@@ -979,7 +985,7 @@
         <div style="font-size:11px;color:#9A9993;">esta semana</div>
       </div>
     </div>
-
+ 
     <div class="phone-frame">
       <div class="phone-screen">
         <div class="phone-header">
@@ -1015,7 +1021,7 @@
         </div>
       </div>
     </div>
-
+ 
     <div class="floating-badge bottom-left">
       <div class="badge-icon" style="background:#FEF0CC;">
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 2v4l3 3" stroke="#854F0B" stroke-width="1.5" stroke-linecap="round"/><circle cx="8" cy="8" r="6" stroke="#854F0B" stroke-width="1.5"/></svg>
@@ -1027,7 +1033,7 @@
     </div>
   </div>
 </div>
-
+ 
 <!-- TRUST BAR -->
 <div class="trust-bar">
   <div class="trust-inner">
@@ -1067,14 +1073,14 @@
     </div>
   </div>
 </div>
-
+ 
 <!-- HOW IT WORKS -->
 <section class="how-it-works" id="como-funciona">
   <div class="section-inner">
     <div class="section-label">Cómo funciona</div>
     <h2 class="section-title">Tres pasos y listo.</h2>
     <p class="section-desc">No necesitás saber de tecnología. Si podés mandar un mensaje de WhatsApp, podés usar Ronda.</p>
-
+ 
     <div class="steps-grid">
       <div class="step">
         <span class="step-num">01</span>
@@ -1111,14 +1117,14 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- NICHOS -->
 <section id="negocios">
   <div class="section-inner">
     <div class="section-label">Para tu negocio</div>
     <h2 class="section-title">¿Cuál es el tuyo?</h2>
     <p class="section-desc">Ronda funciona para cualquier negocio con base de clientes en WhatsApp. Estos son los más comunes.</p>
-
+ 
     <div class="nichos-grid">
       <div class="nicho-card">
         <div class="nicho-icon" style="background:#EAF3DE;">💪</div>
@@ -1159,26 +1165,26 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- SOCIAL PROOF HONESTA -->
 <section style="background:white; padding-top: 0;">
   <div class="section-inner">
     <div class="section-label">Por qué funciona</div>
     <h2 class="section-title">Construido desde adentro.</h2>
     <p class="section-desc">Ronda nació porque lo necesitábamos nosotros primero. Automago lo usa para comunicarse con sus propios clientes todos los meses.</p>
-
+ 
     <div class="testimonial-grid">
-
+ 
       <div class="testi-card" style="display:flex;flex-direction:column;justify-content:space-between;">
         <p class="testi-quote" style="font-style:normal;font-size:15px;color:var(--ink);font-weight:500;margin-bottom:1rem;">WhatsApp tiene una tasa de apertura del 98%. El email tiene 20%. Tu base de clientes ya está ahí — solo falta hablarles.</p>
         <div style="font-size:12px;color:var(--subtle);padding-top:.75rem;border-top:0.5px solid var(--rule);">Dato de industria · Meta Business Reports 2024</div>
       </div>
-
+ 
       <div class="testi-card" style="display:flex;flex-direction:column;justify-content:space-between;">
         <p class="testi-quote" style="font-style:normal;font-size:15px;color:var(--ink);font-weight:500;margin-bottom:1rem;">Un negocio con 300 clientes que manda mensajes manualmente pierde entre 1 y 3 horas por semana. Son 6 días al año haciendo copy-paste.</p>
         <div style="font-size:12px;color:var(--subtle);padding-top:.75rem;border-top:0.5px solid var(--rule);">Estimación propia · base: 30s por mensaje × 300 contactos</div>
       </div>
-
+ 
       <div class="testi-card" style="background:var(--g050);border-color:var(--g100);display:flex;flex-direction:column;justify-content:space-between;">
         <div>
           <div style="font-size:11px;font-weight:700;color:var(--g500);text-transform:uppercase;letter-spacing:.06em;margin-bottom:.75rem;">Somos clientes fundadores</div>
@@ -1188,18 +1194,18 @@
           <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </a>
       </div>
-
+ 
     </div>
   </div>
 </section>
-
+ 
 <!-- PRICING -->
 <section class="pricing-bg" id="precios">
   <div class="section-inner">
     <div class="section-label" style="text-align:center;">Precios</div>
     <h2 class="section-title" style="text-align:center;">Simple y sin sorpresas.</h2>
     <p class="section-desc" style="text-align:center;margin:0 auto 0;">Un precio fijo por mes. Sin costo por mensaje. Sin letra chica.</p>
-
+ 
     <div class="pricing-grid">
       <!-- Starter -->
       <div class="price-card">
@@ -1238,7 +1244,7 @@
         </ul>
         <a href="#empezar" class="price-cta price-cta-outline" style="border:1.5px solid var(--rule);">Empezar con Starter</a>
       </div>
-
+ 
       <!-- Pro -->
       <div class="price-card featured">
         <div class="featured-badge">Más elegido</div>
@@ -1277,7 +1283,46 @@
         </ul>
         <a href="#empezar" class="price-cta price-cta-primary">Empezar con Pro</a>
       </div>
-
+ 
+      <!-- Pro IA -->
+      <div class="price-card" style="border:2px solid var(--a300);position:relative;">
+        <div style="position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--a300);color:var(--g900);font-size:11px;font-weight:700;padding:4px 16px;border-radius:20px;white-space:nowrap;letter-spacing:.04em;">Con inteligencia artificial</div>
+        <div class="price-name">Pro IA</div>
+        <div class="price-amount">
+          <span class="price-currency">USD</span>
+          <span class="price-number">79</span>
+        </div>
+        <div class="price-period">por mes · facturado mensualmente</div>
+        <div class="price-setup">Sin setup · activación inmediata</div>
+        <ul class="price-features">
+          <li>
+            <div class="check"><svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M1 4l2 2 4-4" stroke="#3B6D11" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            Todo lo del plan Pro
+          </li>
+          <li>
+            <div class="check"><svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M1 4l2 2 4-4" stroke="#3B6D11" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            Agente IA responde por vos
+          </li>
+          <li>
+            <div class="check"><svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M1 4l2 2 4-4" stroke="#3B6D11" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            500 conversaciones/mes incluidas
+          </li>
+          <li>
+            <div class="check"><svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M1 4l2 2 4-4" stroke="#3B6D11" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            +USD 5 cada 100 adicionales
+          </li>
+          <li>
+            <div class="check"><svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M1 4l2 2 4-4" stroke="#3B6D11" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            Respuestas 24/7 sin intervención
+          </li>
+          <li>
+            <div class="check"><svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M1 4l2 2 4-4" stroke="#3B6D11" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            Personalización del tono y contexto
+          </li>
+        </ul>
+        <a href="#empezar" class="price-cta" style="display:block;width:100%;text-align:center;padding:13px;border-radius:var(--radius);font-family:var(--sans);font-size:14px;font-weight:700;cursor:pointer;text-decoration:none;background:var(--a300);color:var(--g900);border:none;transition:background .2s;">Quiero el agente IA</a>
+      </div>
+ 
       <!-- Business -->
       <div class="price-card">
         <div class="price-name">Business</div>
@@ -1316,7 +1361,7 @@
         <a href="#empezar" class="price-cta price-cta-outline" style="border:1.5px solid var(--rule);">Hablar con ventas</a>
       </div>
     </div>
-
+ 
     <!-- Socios Fundadores -->
     <div style="margin-top:1.5rem;background:var(--g900);border-radius:var(--radius-lg);padding:1.75rem 2rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1.5rem;">
       <div>
@@ -1338,13 +1383,13 @@
         </a>
       </div>
     </div>
-
+ 
     <p style="text-align:center;font-size:13px;color:var(--subtle);margin-top:1.5rem;">
       Precios en USD. Podés pagar en pesos al tipo de cambio del día. Sin contrato mínimo.
     </p>
   </div>
 </section>
-
+ 
 <!-- CTA FINAL -->
 <section class="cta-final" id="empezar">
   <div class="section-inner" style="text-align:center;">
@@ -1360,7 +1405,7 @@
     <p class="cta-note">Te responden en menos de 2 horas · Lunes a viernes</p>
   </div>
 </section>
-
+ 
 <!-- FOOTER -->
 <footer>
   <div class="footer-inner">
@@ -1379,6 +1424,6 @@
     <div class="footer-copy">© 2025 Automago · ronda.automago.cloud · Sarandí, Argentina</div>
   </div>
 </footer>
-
+ 
 </body>
 </html>
