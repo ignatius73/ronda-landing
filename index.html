@@ -1206,7 +1206,77 @@
     <h2 class="section-title" style="text-align:center;">Simple y sin sorpresas.</h2>
     <p class="section-desc" style="text-align:center;margin:0 auto 0;">Un precio fijo por mes. Sin costo por mensaje. Sin letra chica.</p>
 
-    <div class="pricing-grid" style="grid-template-columns:repeat(5,minmax(0,1fr));">
+    <!-- TOGGLE -->
+    <div style="display:flex;justify-content:center;margin-top:2rem;">
+      <div style="display:inline-flex;background:white;border-radius:50px;padding:5px;border:0.5px solid var(--rule);">
+        <button id="btn-personal" onclick="switchPricing('personal')"
+          style="padding:10px 28px;border-radius:50px;border:none;font-family:var(--sans);font-size:14px;font-weight:600;cursor:pointer;transition:all .2s;background:var(--g700);color:white;">
+          Planes Personales
+        </button>
+        <button id="btn-pyme" onclick="switchPricing('pyme')"
+          style="padding:10px 28px;border-radius:50px;border:none;font-family:var(--sans);font-size:14px;font-weight:600;cursor:pointer;transition:all .2s;background:transparent;color:var(--muted);">
+          Planes PyME
+        </button>
+      </div>
+    </div>
+
+    <!-- DESCRIPCION CONTEXTUAL -->
+    <p id="pricing-desc" style="text-align:center;font-size:13px;color:var(--g500);margin-top:1rem;transition:opacity .2s;">
+      Kioscos, emprendedores, vendedores online y negocios unipersonales. Desde el precio de un streaming.
+    </p>
+
+    <!-- PANEL PERSONALES -->
+    <div id="panel-personal" style="margin-top:1.5rem;">
+      <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;max-width:560px;margin:0 auto;">
+
+        <div class="price-card" style="border-color:var(--g100);background:var(--g050);">
+          <div class="price-name" style="color:var(--g500);">Micro</div>
+          <div class="price-amount">
+            <span class="price-currency">USD</span>
+            <span class="price-number">9</span>
+          </div>
+          <div class="price-period">por mes · facturado mensualmente</div>
+          <div class="price-setup">Sin setup · activación inmediata</div>
+          <ul class="price-features">
+            <li><div class="check"><svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M1 4l2 2 4-4" stroke="#3B6D11" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>Hasta 50 contactos</li>
+            <li><div class="check"><svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M1 4l2 2 4-4" stroke="#3B6D11" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>Mensajes de texto</li>
+            <li><div class="check"><svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M1 4l2 2 4-4" stroke="#3B6D11" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>Envíos a demanda</li>
+            <li><div class="check"><svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M1 4l2 2 4-4" stroke="#3B6D11" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>1 programación activa</li>
+            <li><div class="cross"><svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M2 2l4 4M6 2L2 6" stroke="#888" stroke-width="1.5" stroke-linecap="round"/></svg></div><span style="opacity:.4;">Imágenes</span></li>
+            <li><div class="cross"><svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M2 2l4 4M6 2L2 6" stroke="#888" stroke-width="1.5" stroke-linecap="round"/></svg></div><span style="opacity:.4;">Bot IA</span></li>
+          </ul>
+          <a href="#empezar" class="price-cta price-cta-outline" style="border:1.5px solid var(--g300);color:var(--g700);">Empezar con Micro</a>
+        </div>
+
+        <div class="price-card" style="border:2px solid var(--g500);">
+          <div class="featured-badge" style="background:var(--g500);">Con bot IA</div>
+          <div class="price-name" style="color:var(--g500);">Micro Bot</div>
+          <div class="price-amount">
+            <span class="price-currency">USD</span>
+            <span class="price-number">25</span>
+          </div>
+          <div class="price-period">por mes · facturado mensualmente</div>
+          <div class="price-setup">Sin setup · activación inmediata</div>
+          <ul class="price-features">
+            <li><div class="check"><svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M1 4l2 2 4-4" stroke="#3B6D11" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>Todo lo del plan Micro</li>
+            <li><div class="check"><svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M1 4l2 2 4-4" stroke="#3B6D11" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>Agente IA responde por vos</li>
+            <li><div class="check"><svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M1 4l2 2 4-4" stroke="#3B6D11" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>150 conversaciones/mes</li>
+            <li><div class="check"><svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M1 4l2 2 4-4" stroke="#3B6D11" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>+USD 5 cada 100 adicionales</li>
+            <li><div class="check"><svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M1 4l2 2 4-4" stroke="#3B6D11" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>Pedidos, turnos, soporte, ventas</li>
+            <li><div class="check"><svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M1 4l2 2 4-4" stroke="#3B6D11" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>Respuestas 24/7</li>
+          </ul>
+          <a href="#empezar" class="price-cta price-cta-primary">Empezar con Micro Bot</a>
+        </div>
+
+      </div>
+      <p style="text-align:center;font-size:13px;color:var(--subtle);margin-top:1.25rem;">
+        ¿Creció tu negocio? Podés pasar a un plan PyME en cualquier momento. Sin perder tus datos.
+      </p>
+    </div>
+
+    <!-- PANEL PYME -->
+    <div id="panel-pyme" style="display:none;margin-top:1.5rem;">
+      <div class="pricing-grid" style="grid-template-columns:repeat(5,minmax(0,1fr));">
       <!-- Starter -->
       <div class="price-card">
         <div class="price-name">Starter</div>
@@ -1223,10 +1293,6 @@
           </li>
           <li>
             <div class="check"><svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M1 4l2 2 4-4" stroke="#3B6D11" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            1 número de WhatsApp
-          </li>
-          <li>
-            <div class="check"><svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M1 4l2 2 4-4" stroke="#3B6D11" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
             Mensajes de texto
           </li>
           <li>
@@ -1234,12 +1300,16 @@
             Envíos a demanda
           </li>
           <li>
+            <div class="check"><svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M1 4l2 2 4-4" stroke="#3B6D11" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            Hasta 3 programaciones activas
+          </li>
+          <li>
             <div class="cross"><svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M2 2l4 4M6 2L2 6" stroke="#888" stroke-width="1.5" stroke-linecap="round"/></svg></div>
             <span style="opacity:.4;">Imágenes / collage</span>
           </li>
           <li>
             <div class="cross"><svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M2 2l4 4M6 2L2 6" stroke="#888" stroke-width="1.5" stroke-linecap="round"/></svg></div>
-            <span style="opacity:.4;">Programaciones recurrentes</span>
+            <span style="opacity:.4;">Bot IA</span>
           </li>
         </ul>
         <a href="#empezar" class="price-cta price-cta-outline" style="border:1.5px solid var(--rule);">Empezar con Starter</a>
@@ -1400,8 +1470,9 @@
         <a href="#empezar" class="price-cta price-cta-outline" style="border:1.5px solid var(--rule);">Hablar con ventas</a>
       </div>
     </div>
+    </div><!-- /panel-pyme -->
 
-    <!-- Socios Fundadores -->
+    <!-- Socios Fundadores — visible siempre -->
     <div style="margin-top:1.5rem;background:var(--g900);border-radius:var(--radius-lg);padding:1.75rem 2rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1.5rem;">
       <div>
         <div style="display:inline-flex;align-items:center;gap:6px;background:rgba(242,168,51,.15);border:1px solid rgba(242,168,51,.3);border-radius:20px;padding:3px 12px;font-size:11px;font-weight:700;color:var(--a300);letter-spacing:.06em;text-transform:uppercase;margin-bottom:.75rem;">
@@ -1428,6 +1499,21 @@
     </p>
   </div>
 </section>
+
+<script>
+function switchPricing(type) {
+  const isPersonal = type === 'personal';
+  document.getElementById('panel-personal').style.display = isPersonal ? 'block' : 'none';
+  document.getElementById('panel-pyme').style.display = isPersonal ? 'none' : 'block';
+  document.getElementById('btn-personal').style.background = isPersonal ? 'var(--g700)' : 'transparent';
+  document.getElementById('btn-personal').style.color = isPersonal ? 'white' : 'var(--muted)';
+  document.getElementById('btn-pyme').style.background = isPersonal ? 'transparent' : 'var(--g700)';
+  document.getElementById('btn-pyme').style.color = isPersonal ? 'var(--muted)' : 'white';
+  document.getElementById('pricing-desc').textContent = isPersonal
+    ? 'Kioscos, emprendedores, vendedores online y negocios unipersonales. Desde el precio de un streaming.'
+    : 'Gimnasios, contadores, restaurantes, comercios. Herramientas completas para crecer.';
+}
+</script>
 
 <!-- CTA FINAL -->
 <section class="cta-final" id="empezar">
